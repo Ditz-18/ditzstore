@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="DITZ Store — Layanan Social Media Terpercaya. Followers, Likes, Views, dan lebih banyak lagi untuk Instagram, TikTok, dan YouTube.">
+<title>DITZ Store — Social Media Services</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     DESKTOP NAV
+═══════════════════════════════════════════════ -->
+<nav id="desktop-nav">
+  <a class="nav-logo" href="#" data-section="beranda">DITZ<span>.</span></a>
+
+  <div class="nav-search">
+    <input type="text" id="nav-search-input" placeholder="Cari layanan, platform...">
+    <button id="nav-search-btn" title="Cari"><i class="fas fa-search"></i></button>
+  </div>
+
+  <div class="nav-links">
+    <button class="nav-link active" data-section="beranda">
+      <i class="fas fa-house"></i> Beranda
+    </button>
+    <button class="nav-link" data-section="layanan">
+      <i class="fas fa-store"></i> Layanan
+    </button>
+    <button class="nav-link" data-section="kalkulator">
+      <i class="fas fa-calculator"></i> Kalkulator
+    </button>
+    <button class="nav-link" data-section="custom">
+      <i class="fas fa-pen-to-square"></i> Custom Order
+    </button>
+    <button class="nav-link" data-section="kontak">
+      <i class="fas fa-headset"></i> Kontak
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     APP WRAPPER
+═══════════════════════════════════════════════ -->
+<div id="app">
+
+  <!-- ─── BERANDA ─────────────────────────────── -->
+  <section class="section active" id="sec-beranda">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-eyebrow">
+        <i class="fas fa-bolt"></i> Layanan Terpercaya & Instan
+      </div>
+      <h1>Tingkatkan <em>Social Media</em><br>Anda Bersama Kami</h1>
+      <p>Ratusan layanan followers, likes, views, dan engagement untuk Instagram, TikTok, dan YouTube. Harga transparan, proses cepat.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" data-section="layanan">
+          <i class="fas fa-store"></i> Lihat Semua Layanan
+        </button>
+        <button class="btn-secondary" data-section="kalkulator">
+          <i class="fas fa-calculator"></i> Hitung Harga
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" id="stat-total">170+</div>
+          <div class="stat-label">Total Layanan</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-platforms">3</div>
+          <div class="stat-label">Platform</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Support WA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Instan</div>
+          <div class="stat-label">Proses Order</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platform Cards -->
+    <div style="margin-bottom:1rem">
+      <div class="page-header" style="margin-bottom:1rem">
+        <h1 style="font-size:1.2rem">Platform Tersedia</h1>
+      </div>
+      <div class="platform-grid" id="platform-cards"></div>
+    </div>
+
+    <!-- Features -->
+    <div class="page-header" style="margin-bottom:1rem">
+      <h1 style="font-size:1.2rem">Mengapa DITZ Store?</h1>
+    </div>
+    <div class="features-bar">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+        <div class="feature-text">
+          <strong>Proses Instan</strong>
+          <span>Order diproses otomatis</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="feature-text">
+          <strong>Aman & Terpercaya</strong>
+          <span>Sudah ribuan pelanggan</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-rotate"></i></div>
+        <div class="feature-text">
+          <strong>Garansi Refill</strong>
+          <span>Hingga 365 hari</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-headset"></i></div>
+        <div class="feature-text">
+          <strong>CS via WhatsApp</strong>
+          <span>Respon cepat 24/7</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+        <div class="feature-text">
+          <strong>Harga Transparan</strong>
+          <span>Tidak ada biaya tersembunyi</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-pen-to-square"></i></div>
+        <div class="feature-text">
+          <strong>Custom Order</strong>
+          <span>Jumlah bebas sesuai kebutuhan</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── LAYANAN ──────────────────────────────── -->
+  <section class="section" id="sec-layanan">
+
+    <div class="page-header">
+      <h1>Semua <span>Layanan</span></h1>
+      <p>Pilih platform dan kategori layanan yang Anda butuhkan</p>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="layanan-toolbar">
+      <div class="platform-tabs" id="platform-tabs"></div>
+      <div class="sort-row">
+        <span class="result-count" id="result-count"></span>
+        <select class="sort-select" id="sort-select">
+          <option value="default">Default</option>
+          <option value="price-asc">Harga Terendah</option>
+          <option value="price-desc">Harga Tertinggi</option>
+          <option value="name">Nama A-Z</option>
+          <option value="min-asc">Min. Order Terkecil</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Type tabs -->
+    <div class="type-tabs" id="type-tabs"></div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="product-grid"></div>
+
+  </section>
+
+  <!-- ─── KALKULATOR ──────────────────────────── -->
+  <section class="section" id="sec-kalkulator">
+
+    <div class="page-header">
+      <h1>Kalkulator <span>Harga</span></h1>
+      <p>Hitung estimasi biaya layanan sebelum memesan</p>
+    </div>
+
+    <div class="calc-layout">
+
+      <!-- Form -->
+      <div class="calc-panel">
+        <h2><i class="fas fa-sliders"></i> Pilih Layanan</h2>
+
+        <div class="form-group">
+          <label class="form-label">Platform</label>
+          <select class="form-control" id="calc-platform">
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">YouTube</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tipe Layanan</label>
+          <select class="form-control" id="calc-type">
+            <option value="">-- Pilih Tipe --</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Layanan</label>
+          <select class="form-control" id="calc-service">
+            <option value="">-- Pilih tipe dulu --</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Jumlah yang Diinginkan</label>
+          <div class="qty-presets">
+            <button class="qty-preset" onclick="document.getElementById('calc-qty').value=1000; document.getElementById('calc-qty').dispatchEvent(new Event('input'))">1K</button>
+            <button class="qty-preset" onclick="document.getElementById('calc-qty').value=5000; document.getElementById('calc-qty').dispatchEvent(new Event('input'))">5K</button>
+            <button class="qty-preset" onclick="document.getElementById('calc-qty').value=10000; document.getElementById('calc-qty').dispatchEvent(new Event('input'))">10K</button>
+            <button class="qty-preset" onclick="document.getElementById('calc-qty').value=50000; document.getElementById('calc-qty').dispatchEvent(new Event('input'))">50K</button>
+            <button class="qty-preset" onclick="document.getElementById('calc-qty').value=100000; document.getElementById('calc-qty').dispatchEvent(new Event('input'))">100K</button>
+            <button class="qty-preset" onclick="document.getElementById('calc-qty').value=1000000; document.getElementById('calc-qty').dispatchEvent(new Event('input'))">1Jt</button>
+          </div>
+          <input type="number" class="form-control" id="calc-qty" value="1000" min="1" placeholder="Masukkan jumlah...">
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div>
+        <div class="calc-panel">
+          <h2><i class="fas fa-receipt"></i> Estimasi Harga</h2>
+          <div class="calc-result" id="calc-result">
+            <p style="color:var(--text3);font-size:.83rem;text-align:center;padding:.5rem 0">
+              Pilih platform, tipe, dan layanan untuk melihat estimasi harga.
+            </p>
+          </div>
+          <a id="calc-wa-btn" href="#" target="_blank" class="btn-primary" style="margin-top:1rem;display:none;width:100%;justify-content:center">
+            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+          </a>
+        </div>
+
+        <div class="calc-panel" style="margin-top:1rem">
+          <h2><i class="fas fa-circle-info"></i> Cara Hitung</h2>
+          <div style="font-size:.82rem;color:var(--text2);line-height:1.7">
+            <p style="margin-bottom:.6rem">Harga dihitung berdasarkan <strong>Rate per 1.000</strong> dikali jumlah yang Anda pesan.</p>
+            <p style="margin-bottom:.6rem">Contoh: Rate per 1.000 = Rp 10.000, pesan 5.000 = <strong>Rp 50.000</strong></p>
+            <p>Harga sudah termasuk markup layanan DITZ Store.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ─── CUSTOM ORDER ─────────────────────────── -->
+  <section class="section" id="sec-custom">
+
+    <div class="page-header">
+      <h1>Custom <span>Order</span></h1>
+      <p>Pesan jumlah khusus di luar paket yang tersedia</p>
+    </div>
+
+    <div class="custom-layout">
+
+      <!-- Form -->
+      <div class="custom-form-panel">
+        <h2><i class="fas fa-pen-to-square"></i> Form Custom Order</h2>
+        <p class="custom-desc">
+          Gunakan form ini jika jumlah yang Anda inginkan tidak tersedia di daftar layanan standar,
+          atau jika ingin memesan jumlah di bawah minimum paket yang ditampilkan.
+          Setiap layanan memiliki minimum order custom — lihat tabel di samping.
+        </p>
+
+        <form id="custom-order-form">
+
+          <div class="form-group">
+            <label class="form-label">Platform <span style="color:#ef4444">*</span></label>
+            <select class="form-control" id="custom-platform" required>
+              <option value="">-- Pilih Platform --</option>
+              <option value="instagram">Instagram</option>
+              <option value="tiktok">TikTok</option>
+              <option value="youtube">YouTube</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tipe Layanan <span style="color:#ef4444">*</span></label>
+            <select class="form-control" id="custom-type" required>
+              <option value="">-- Pilih platform dulu --</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Jumlah yang Diinginkan <span style="color:#ef4444">*</span></label>
+            <input type="number" class="form-control" id="custom-qty" placeholder="Contoh: 500" min="1" required>
+            <div style="font-size:.75rem;color:var(--text3);margin-top:.4rem">
+              <i class="fas fa-circle-info"></i> Lihat tabel minimum order custom di samping
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Link / Username Akun <span style="color:#ef4444">*</span></label>
+            <input type="text" class="form-control" id="custom-link" placeholder="https://instagram.com/username" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Catatan Tambahan (opsional)</label>
+            <textarea class="form-control" id="custom-notes" rows="3" placeholder="Contoh: Refill seumur hidup, kualitas real, dll."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:.8rem">
+            <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+          </button>
+
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="custom-info-panel">
+
+        <div class="info-card">
+          <h3><i class="fas fa-circle-info"></i> Ketentuan Custom Order</h3>
+          <div class="info-list">
+            <div class="info-row">
+              <i class="fas fa-check"></i>
+              <span>Custom order memiliki minimum order tersendiri di setiap layanan</span>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-check"></i>
+              <span>Harga custom order sama dengan rate per 1.000 yang berlaku</span>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-check"></i>
+              <span>CS kami akan konfirmasi ketersediaan dan total harga via WhatsApp</span>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-check"></i>
+              <span>Pembayaran dilakukan setelah konfirmasi dari CS</span>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-triangle-exclamation" style="color:#f59e0b"></i>
+              <span>Pastikan akun/profil Anda tidak dikunci saat order diproses</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3><i class="fas fa-table"></i> Minimum Custom Order</h3>
+          <div style="overflow-x:auto">
+            <table class="min-order-table">
+              <thead>
+                <tr>
+                  <th>Platform</th>
+                  <th>Tipe</th>
+                  <th style="text-align:right">Min. Order</th>
+                </tr>
+              </thead>
+              <tbody id="min-order-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ─── KONTAK ───────────────────────────────── -->
+  <section class="section" id="sec-kontak">
+
+    <div class="page-header">
+      <h1>Kontak & <span>Bantuan</span></h1>
+      <p>Hubungi kami untuk pertanyaan, kendala, atau informasi lebih lanjut</p>
+    </div>
+
+    <div class="kontak-layout">
+
+      <!-- WA & Info -->
+      <div style="display:flex;flex-direction:column;gap:1rem">
+
+        <div class="kontak-card">
+          <h2><i class="fab fa-whatsapp"></i> Hubungi via WhatsApp</h2>
+          <p>Tim kami siap membantu Anda 24 jam sehari, 7 hari seminggu melalui WhatsApp. Respons rata-rata dalam 5–15 menit.</p>
+          <a class="wa-btn" id="wa-contact-btn" href="#" target="_blank">
+            <div class="wa-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="wa-info">
+              <strong>Chat dengan CS DITZ Store</strong>
+              <span>Klik untuk mulai percakapan</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="kontak-card">
+          <h2><i class="fas fa-clock"></i> Jam Operasional</h2>
+          <div class="contact-hours">
+            <div class="hours-row"><span>Senin – Jumat</span><strong>08.00 – 22.00 WIB</strong></div>
+            <div class="hours-row"><span>Sabtu – Minggu</span><strong>09.00 – 21.00 WIB</strong></div>
+            <div class="hours-row"><span>Respon Darurat</span><strong>Selalu Aktif</strong></div>
+          </div>
+        </div>
+
+        <div class="kontak-card">
+          <h2><i class="fas fa-building"></i> Tentang Kami</h2>
+          <p style="font-size:.84rem;color:var(--text2);line-height:1.7">
+            <strong style="color:var(--text)">DITZ Store</strong> adalah layanan social media terpercaya
+            yang dikelola oleh <strong style="color:var(--accent)">DITZNET TECHNOLOGY</strong>.
+            Kami menyediakan ratusan layanan engagement untuk membantu pertumbuhan akun media sosial
+            Anda secara efisien dan terjangkau.
+          </p>
+          <div style="font-size:.78rem;color:var(--text3);margin-top:.5rem">
+            &copy; 2025 DITZNET TECHNOLOGY. All rights reserved.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ -->
+      <div class="kontak-card">
+        <h2><i class="fas fa-circle-question"></i> FAQ</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">
+              Berapa lama proses pengerjaan order?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Layanan dengan label <strong>Instant</strong> mulai diproses dalam hitungan detik hingga beberapa menit setelah pembayaran dikonfirmasi. Layanan <strong>Slow</strong> bisa memakan waktu beberapa jam hingga berhari-hari tergantung kecepatan yang dipilih.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              Apa itu Refill dan bagaimana cara klaimnya?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Refill adalah jaminan pengisian ulang jika jumlah yang sudah masuk berkurang (drop) dalam periode garansi. Hubungi CS kami via WhatsApp dengan menyertakan ID order dan screenshot kondisi akun terkini.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              Apakah akun saya aman?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Kami tidak pernah meminta password akun Anda. Hanya dibutuhkan username atau link profil/konten. Layanan kami menggunakan metode yang sesuai dengan cara kerja platform masing-masing.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              Metode pembayaran apa yang tersedia?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Kami menerima transfer bank, e-wallet (GoPay, OVO, Dana, ShopeePay), dan QRIS. Detail rekening akan diberikan oleh CS kami saat konfirmasi order.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              Bisa pesan jumlah di luar daftar paket?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Bisa! Gunakan fitur <strong>Custom Order</strong> di menu navigasi. Anda bisa memesan jumlah berapapun selama di atas minimum order custom layanan tersebut. CS kami akan konfirmasi ketersediaan dan total harga.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              Apakah ada diskon untuk pembelian besar?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Ya, untuk pembelian dalam jumlah besar (bulk order) kami menyediakan harga khusus. Silakan hubungi CS kami via WhatsApp untuk negosiasi harga.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              Bagaimana jika order tidak berjalan?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-a">
+              Jika order tidak berjalan dalam waktu 24 jam setelah pembayaran dikonfirmasi, CS kami akan membantu proses refund atau penggantian layanan sesuai kebijakan kami.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</div><!-- end #app -->
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-logo">DITZ<span>.</span>Store</div>
+  <div>&copy; 2025 <strong>DITZNET TECHNOLOGY</strong> — All Rights Reserved
+  <br> Product List
+  </div>
+  <div style="display:flex;gap:1rem">
+    <span style="display:flex;align-items:center;gap:.35rem">
+      <i class="fab fa-instagram" style="color:#e1306c"></i> Instagram
+    </span>
+    <span style="display:flex;align-items:center;gap:.35rem">
+      <i class="fab fa-tiktok"></i> TikTok
+    </span>
+    <span style="display:flex;align-items:center;gap:.35rem">
+      <i class="fab fa-youtube" style="color:#ff0000"></i> YouTube
+    </span>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+     MOBILE BOTTOM NAV
+═══════════════════════════════════════════════ -->
+<nav id="bottom-nav">
+  <div class="bot-nav-inner">
+    <button class="bot-nav-btn active" data-section="beranda">
+      <div class="bot-icon"><i class="fas fa-house"></i></div>
+      <span>Beranda</span>
+    </button>
+    <button class="bot-nav-btn" data-section="layanan">
+      <div class="bot-icon"><i class="fas fa-store"></i></div>
+      <span>Layanan</span>
+    </button>
+    <button class="bot-nav-btn" data-section="kalkulator">
+      <div class="bot-icon"><i class="fas fa-calculator"></i></div>
+      <span>Kalkulator</span>
+    </button>
+    <button class="bot-nav-btn" data-section="custom">
+      <div class="bot-icon"><i class="fas fa-pen-to-square"></i></div>
+      <span>Custom</span>
+    </button>
+    <button class="bot-nav-btn" data-section="kontak">
+      <div class="bot-icon"><i class="fas fa-headset"></i></div>
+      <span>Kontak</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     PRODUCT DETAIL MODAL
+═══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+
+    <div class="modal-header">
+      <div class="modal-header-icon" id="modal-icon"></div>
+      <div class="modal-header-info">
+        <div class="modal-type" id="modal-type-label"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-type" id="modal-id" style="margin-top:.2rem"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="modal-body">
+
+      <!-- Tags -->
+      <div id="modal-tags" style="display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:1rem"></div>
+
+      <!-- Specs -->
+      <div class="modal-specs-grid" id="modal-specs"></div>
+
+      <!-- Price section -->
+      <div class="modal-price-section">
+        <div class="modal-price-row">
+          <span>Harga per 1.000</span>
+          <strong id="modal-price-per-k"></strong>
+        </div>
+        <div class="modal-price-row">
+          <span>Jumlah dipesan</span>
+          <strong id="modal-qty-display"></strong>
+        </div>
+        <div class="modal-price-row" style="padding-top:.6rem;margin-top:.2rem">
+          <span>Estimasi Total</span>
+          <span class="modal-price-main" id="modal-price-total"></span>
+        </div>
+      </div>
+
+      <!-- Order form -->
+      <div class="modal-order-form">
+        <div class="form-group" style="margin-bottom:.5rem">
+          <label class="form-label">Jumlah Order</label>
+          <div class="modal-qty-presets" id="modal-presets" style="margin-bottom:.5rem"></div>
+          <input type="number" class="form-control" id="modal-qty-input" min="1">
+          <div class="form-label" id="modal-min-warn" style="margin-top:.4rem;color:var(--text3)"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn-secondary" onclick="closeModal()" style="flex-shrink:0">
+        <i class="fas fa-times"></i> Tutup
+      </button>
+      <button class="btn-primary" onclick="orderFromModal()" style="flex:1;justify-content:center">
+        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     TOAST
+═══════════════════════════════════════════════ -->
+<div class="toast-wrap" id="toast-wrap"></div>
+
+<!-- ═══════════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════════ -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
